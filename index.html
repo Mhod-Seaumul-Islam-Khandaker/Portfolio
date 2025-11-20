@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MHOD SEAUMUL ISLAM KHANDAKER — Portfolio / CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .dark-header {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+    .gradient-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .dark .gradient-header {
+      background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+    }
+    .section-title {
+      border-left: 4px solid #667eea;
+      padding-left: 12px;
+    }
+    .dark .section-title {
+      border-left-color: #818cf8;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: #f0f4ff;
+      color: #667eea;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 0.85rem;
+    }
+    .dark .skill-tag {
+      background: #312e81;
+      color: #a5b4fc;
+    }
+    .project-card {
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+    .dark .project-card {
+      border-color: #4b5563;
+    }
+    .project-card:hover {
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+      transform: translateY(-2px);
+    }
+    .contact-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .dark .contact-link {
+      color: #a5b4fc;
+    }
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+  <main>
+    <!-- Header -->
+<header class="dark-header text-white">
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <div class="flex items-start justify-between gap-2">
+      <div class="flex-1">
+        <h1 class="text-4xl font-bold mb-2">MHOD SEAUMUL ISLAM KHANDAKER</h1>
+        <p class="text-lg text-blue-100 mb-4">Computer Science Student | AI & Accessibility Enthusiast</p>
+        <div class="flex flex-row gap-8">
+            <a href="https://www.linkedin.com/in/seaumul-islam-63252a388/" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded text-sm font-medium transition">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn
+            </a>
+            <a href="https://github.com/Mhod-Seaumul-Islam-Khandaker" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded text-sm font-medium transition">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+            <button id="toggleDark" class="flex items-center gap-2 px-4 py-2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded text-sm font-medium transition">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                </svg>
+                Dark Mode
+            </button>
+            </div>
+
+        <div class="grid grid-cols-2 gap-4 text-sm text-blue-100">
+        <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+            </svg>
+            <span>Dhaka, Bangladesh</span>
+        </div>
+            
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                </svg>
+                <a href="tel:+8801722808926" class="hover:underline">+880 1722 808926</a>
+                <span class="text-xs">(WhatsApp)</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <a href="mailto:seaumulislam@gmail.com" class="hover:underline">seaumulislam@gmail.com</a>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 5.5V7H9V5.5L3 7V9L9 10.5V12L3 13.5V15.5L9 14V16L3 17.5V19.5L9 18V22H15V18L21 19.5V17.5L15 16V14L21 15.5V13.5L15 12V10.5L21 9Z"/>
+                </svg>
+                <div class="text-xs">
+                <span>Emergency Contact - Father:</span>
+                <a href="tel:+8801711614636" class="hover:underline ml-1">+880 1711 614636</a>
+                <span class="mx-1">|</span>
+                <a href="mailto:harunban@gmail.com" class="hover:underline">harunban@gmail.com</a>
+                </div>
+            </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto px-6 py-12">
+
+      <!-- Personal Profile -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Personal Profile & Objective</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            I was born visually impaired; despite this challenge, I am studying Computer Science at BRAC University and expected to graduate in May 2026. Computer is my main tool that makes me understand the world a little visible.
+          </p>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            I am robust, knowledgeable, and dedicated to computer science with a strong academic record and enthusiastic about Artificial Intelligence, Accessibility, and Human-Computer Interaction. I am committed to developing technology to empower people with disabilities. During my studies, I have hands-on experience with Python, JavaScript, Machine Learning, frameworks, web development, and data analysis in project development. I perform equally as others when visual information is presented in accessible formats. I would like to continue my academic journey through graduate studies (MS/PhD) to advance my skills in research and contribute to scientific innovation.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Education</h2>
+        <div class="space-y-4">
+          <!-- BRAC University -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">BRAC University</h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Sep 2022 – Present</span>
+            </div>
+            <p class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-3">Bachelor of Science in Computer Science (Expected Graduation: May 2026)</p>
+            <p class="font-semibold text-gray-700 dark:text-gray-300 mb-3">📊 GPA: 3.88/4.00</p>
+            <div class="bg-gray-50 dark:bg-gray-700 rounded p-4">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Relevant Coursework:</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Programming Language-I & II (CSE110, CSE111); Data Structures (CSE220); Discrete Mathematics (CSE230); Algorithms (CSE221); Data Communications (CSE320); Numerical Methods (CSE330); Automata and Computability (CSE331); Computer Architecture (CSE340); Digital Logic Design (CSE260); Database Systems (CSE370); Compiler Design (CSE420); Artificial Intelligence & Machine Learning (CSE422, CSE424); Software Engineering (CSE470); Computer Networks (CSE421); Computer Graphics (CSE423); Android Apps Development (CSE489); Operating Systems (CSE321); Programming for the Internet (CSE391); Mathematics I-IV (MAT110, MAT120, MAT215, MAT216); Physics I-II (PHY111, PHY112); Statistics and Probability (STA201)
+              </p>
+            </div>
+            <p class="text-sm mt-3"><span class="font-semibold text-gray-700 dark:text-gray-300">Honors/Awards:</span> <span class="text-gray-600 dark:text-gray-400">Merit Scholarship 100%, Top 5 of Class</span></p>
+          </div>
+
+          <!-- HSC -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Higher Secondary Certificate (HSC)</h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Jul 2019 – Jun 2021</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Vashantek Govt. College, Dhaka (EIIN: 136841) | Science Group</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">📊 <span class="font-semibold">GPA: 5.0/5.0</span></p>
+          </div>
+
+          <!-- SSC -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Secondary School Certificate (SSC)</h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Jan 2017 – Dec 2018</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Greenview High School, Dhaka (EIIN: 134139) | Science Group</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">📊 <span class="font-semibold">GPA: 5.0/5.0</span></p>
+          </div>
+
+          <!-- JSC -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Junior School Certificate (JSC)</h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Jan 2014 – Dec 2016</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Dhaka Metropolitan Junior School, Dhaka (EIIN: 137788)</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">📊 <span class="font-semibold">GPA: 5.0/5.0</span></p>
+          </div>
+
+          <!-- PSC -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Primary School Certificate (PSC)</h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Jan 2009 – Dec 2013</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Bijoy International School, Dhaka</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">📊 <span class="font-semibold">GPA: 5.0/5.0</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Interests -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Research Interests</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">🎯 Accessibility</span>
+            <span class="skill-tag">🤝 Human-Computer Interaction (HCI)</span>
+            <span class="skill-tag">🤖 Artificial Intelligence (AI)</span>
+            <span class="skill-tag">📊 Machine Learning (ML)</span>
+            <span class="skill-tag">💬 Natural Language Processing (NLP)</span>
+            <span class="skill-tag">👁️ Computer Vision</span>
+            <span class="skill-tag">🖼️ Image Processing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Projects</h2>
+        <div class="space-y-4">
+          <!-- Project 1 -->
+          <div class="project-card bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Accessible Student Lifecycle Management System</h3>
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full">Academic</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Jan 2025 – May 2026</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3">An undergraduate project aimed at enhancing motivation, productivity, and accessibility in academic life.</p>
+            <div class="mb-3">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tech Stack:</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">MERN Stack</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Tailwind CSS</span>
+              </div>
+            </div>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>✓ WCAG 2.0 accessibility compliance</li>
+              <li>✓ Live student-teacher communication with ML message classification</li>
+              <li>✓ Gamification elements for student motivation</li>
+              <li>✓ Productivity tools (Pomodoro, Timer)</li>
+            </ul>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">AccomoMate</h3>
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full">Academic</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Jan 2025 – May 2025</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3">A modern accommodation platform designed to connect property owners with individuals seeking living spaces.</p>
+            <div class="mb-3">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tech Stack:</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">MERN Stack</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Node.js</span>
+              </div>
+            </div>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>✓ Clean and modern interface</li>
+              <li>✓ Creative design</li>
+              <li>✓ Team collaboration (3 teammates) with Git & Agile practices</li>
+            </ul>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Trip Planning (Bhromon)</h3>
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full">Academic</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Oct 2024 – Jan 2025</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3">A trip-planning website built to help users organize and book trips.</p>
+            <div class="mb-3">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tech Stack:</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">MySQL</span>
+              </div>
+            </div>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>✓ Team collaboration (3 teammates) with Git & Agile practices</li>
+              <li>✓ <a href="https://github.com/Mhod-Seaumul-Islam-Khandaker/Bhromon.git" target="_blank" class="contact-link">GitHub Repository</a></li>
+            </ul>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">StudyMate</h3>
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full">Academic</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Oct 2025 – Jan 2026</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3">A personal study companion app with accessibility support.</p>
+            <div class="mb-3">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tech Stack:</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Android Studio</span>
+              </div>
+            </div>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>✓ Gamification elements for motivation</li>
+              <li>✓ Solo project using Git & Agile practices</li>
+            </ul>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Pac Man 3D</h3>
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full">Academic</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Jun 2025 – Oct 2025</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3">A modified version of the classic Pac Man game with 3D capabilities.</p>
+            <div class="mb-3">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tech Stack:</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">OpenGL</span>
+                <span class="skill-tag">Python</span>
+              </div>
+            </div>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>✓ Team collaboration (3 teammates) with Git & Agile practices</li>
+              <li>✓ <a href="https://github.com/Mhod-Seaumul-Islam-Khandaker/Pacman-3D-with-opengl.git" target="_blank" class="contact-link">GitHub Repository</a></li>
+            </ul>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Chrome Extension for Arabic Study</h3>
+              <span class="text-xs bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full">Personal</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">May 2025 – Jun 2025</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3">A simple tool for accessing various websites related to Arabic study.</p>
+            <div class="mb-3">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tech Stack:</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>✓ Solo project using Git & Agile practices</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Technical Skills</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm space-y-4">
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">Programming Languages</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C/C++</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">AI/ML & Data Science</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">NumPy</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">Web Technologies</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">MERN Stack</span>
+              <span class="skill-tag">Django</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">Databases</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Microsoft Access</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">Tools & Platforms</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Android Studio</span>
+              <span class="skill-tag">Windows PowerShell</span>
+              <span class="skill-tag">Audacity</span>
+              <span class="skill-tag">LaTeX</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Experience</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Accessibility Fellow</h3>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Sep 2025</span>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 mb-2">Research Software Asia Australia Conference (RSAA25) – Volunteer/Fellow</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Published a comprehensive report aiming to improve the experience of visually impaired people.</p>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Certifications & Training</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+          <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-3">✓</span>
+              <span><strong>Microsoft 365 Copilot</strong> – AICERTs, Bangladesh, 2025</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-3">✓</span>
+              <span><strong>AI+ Prompt Engineer Level 1™</strong> – AICERTs, Bangladesh, 2025</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-3">✓</span>
+              <span><strong>Agent X</strong> – NetCom Learning, Bangladesh, 2025</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-3">✓</span>
+              <span><strong>Virtual Student Leadership Conference 2025</strong> – Global Higher Education Alliance, Bangladesh (Oct 25-26, 2025)</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Extracurricular Activities -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Extracurricular Activities</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm space-y-3">
+          <p class="text-gray-700 dark:text-gray-300 flex items-start">
+            <span class="text-blue-500 mr-3">📖</span>
+            <span><strong>Hafiz al-Qur'an</strong> – Completed memorization of the Qur'an</span>
+          </p>
+          <p class="text-gray-700 dark:text-gray-300 flex items-start">
+            <span class="text-blue-500 mr-3">📚</span>
+            <span><strong>Islamic Studies</strong> – Currently in 7th Semester, online-based at Al-Asr Institute, Dhaka, Bangladesh</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Media Appearances -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Media & Public Appearances</h2>
+        <div class="space-y-3">
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">📺 NTV</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Program: "Good Luck Tiffiner Faake" (Episode 584)</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Published: October 8, 2019 — <a href="https://www.youtube.com/watch?v=-HFlRqpJJGs" target="_blank" class="contact-link">Watch on YouTube</a></p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">📺 ATN Bangla</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Program: "Marcel Saphla Shaluk"</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Broadcasted: August 9, 2019</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">📺 Channel 24</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Program: "24 Hours News Headline"</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Broadcasted: May 8, 2022 — <a href="https://www.youtube.com/watch?v=RmEsmewIYEg" target="_blank" class="contact-link">Watch on YouTube</a></p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-2">🎥 Al Asr Institute Testimonial</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">View testimonial on Facebook — <a href="https://www.facebook.com/alasrinstitute/videos/1120155558842442/" target="_blank" class="contact-link">Watch Video</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Language Proficiency -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">Language Proficiency</h2>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm space-y-3">
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">🇧🇩 Bengali</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Native language • Proficient in speaking • Unable to read, write, or type</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">🇬🇧 English</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Learned as second language • Proficient in speaking and typing • Unable to read and write</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">🇸🇦 Arabic</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Learned as third language • Learning to speak • Unable to read and write</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- References -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold section-title mb-4">References</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">Dr. Sadia Hamid Kazi</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Chairperson, Department of Computer Science and Engineering</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-1">BRAC University, Dhaka</p>
+            <a href="mailto:skazi@bracu.ac.bd" class="contact-link text-sm">skazi@bracu.ac.bd</a>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">Dr. Muhammad Nur Yanhaona</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Associate Professor, Department of Computer Science and Engineering</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-1">BRAC University, Dhaka</p>
+            <a href="mailto:nur.yanhaona@bracu.ac.bd" class="contact-link text-sm">nur.yanhaona@bracu.ac.bd</a>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">Mr. Annajiat Alim Rasel</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Senior Lecturer, Department of Computer Science and Engineering</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-1">BRAC University, Dhaka</p>
+            <a href="mailto:annajiat@bracu.ac.bd" class="contact-link text-sm">annajiat@bracu.ac.bd</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8 mt-12">
+      <div class="max-w-5xl mx-auto px-6 text-center text-sm text-gray-600 dark:text-gray-400">
+        <p>Beautifully crafted portfolio • All content preserved from original CV</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const btn = document.getElementById('toggleDark');
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
