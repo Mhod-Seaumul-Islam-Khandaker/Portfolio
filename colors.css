@@ -1,0 +1,39 @@
+/* External CSS for color palette and universal variables */
+
+:root {
+  /* Light mode colors */
+  --primary-blue: #667eea;
+  --light-blue: #a5b4fc;
+  --dark-blue-1: #1a1a2e;
+  --dark-blue-2: #16213e;
+  --dark-blue-3: #0f3460;
+  --card-bg: #ffffff;
+  --bg-secondary: #f9fafb;
+  --border-color: #e5e7eb;
+  --text-primary: #374151;
+  --text-secondary: #6b7280;
+  --skill-bg: #f0f4ff;
+  --skill-text: #667eea;
+  --academic-bg: #dbeafe;
+  --academic-text: #1e40af;
+  --personal-bg: #dcfce7;
+  --personal-text: #166534;
+  --footer-bg: #f9fafb;
+  
+  /* Dark mode colors */
+  --dark-bg: #111827;
+  --dark-text: #f9fafb;
+  --dark-primary: #818cf8;
+  --dark-card-bg: #1f2937;
+  --dark-bg-secondary: #374151;
+  --dark-border: #4b5563;
+  --dark-text-primary: #f9fafb;
+  --dark-text-secondary: #d1d5db;
+  --dark-skill-bg: #312e81;
+  --dark-skill-text: #a5b4fc;
+  --dark-academic-bg: #1e3a8a;
+  --dark-academic-text: #93c5fd;
+  --dark-personal-bg: #14532d;
+  --dark-personal-text: #86efac;
+  --dark-footer-bg: #1f2937;
+}
